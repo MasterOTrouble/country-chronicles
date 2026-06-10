@@ -58,8 +58,9 @@ a:hover {
 }
 
 img {
-  width: 26ch;
-  height: 20ch;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* title box */
@@ -67,7 +68,7 @@ img {
   position: fixed;
   top: 0px;
   right: 0px;
-  width: 780px;
+  width: calc(100% - 300px);
   white-space: nowrap;
   z-index: 9999;
 
@@ -86,7 +87,7 @@ img {
     position: fixed;
     top: 25px;
     right: 0px;
-    width: 804px;
+    width: calc(100% - 270px);
     height: 86px;
     white-space: nowrap;
     z-index: 9999;
@@ -189,4 +190,147 @@ img {
   justify-content: center;
   margin: 40px auto;
   max-width: 1000px;
+}
+
+/* Mobile/Tablet Responsive Design */
+@media (max-width: 1024px) {
+  body {
+    padding-top: 140px;
+  }
+
+  h1 {
+    font-size: 4ch;
+  }
+
+  h2 {
+    font-size: 4ch;
+  }
+
+  p {
+    font-size: 1.8ch;
+    margin: 15px;
+  }
+
+  .contentBox {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .box1 {
+    width: calc(100% - 250px);
+  }
+
+  .box2 {
+    width: calc(100% - 250px);
+  }
+
+  .box3 {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 120px;
+  }
+
+  h1 {
+    font-size: 3ch;
+    line-height: 1ch;
+  }
+
+  h2 {
+    font-size: 2.5ch;
+  }
+
+  h3 {
+    font-size: 2ch;
+  }
+
+  p {
+    font-size: 1.5ch;
+    margin: 10px;
+  }
+
+  a {
+    font-size: medium;
+  }
+
+  /* Collapse sidebar on mobile */
+  .box3 {
+    width: 70px;
+    overflow: hidden;
+  }
+
+  .box3.collapsed {
+    width: 0px;
+  }
+
+  .box1 {
+    width: calc(100% - 70px);
+    font-size: 1.2ch;
+  }
+
+  .box2 {
+    width: calc(100% - 70px);
+    font-size: 3%;
+  }
+
+  .contentBox {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .contentBox img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar-toggle {
+    padding: 6px 10px;
+    font-size: 1.2ch;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 110px;
+  }
+
+  h1 {
+    font-size: 2.5ch;
+    line-height: 0.8ch;
+  }
+
+  h2 {
+    font-size: 2ch;
+    line-height: 1.5ch;
+  }
+
+  p {
+    font-size: 1.3ch;
+    margin: 8px;
+  }
+
+  .box1,
+  .box2 {
+    width: calc(100% - 60px);
+    font-size: 1ch;
+  }
+
+  .box3 {
+    width: 60px;
+  }
+
+  .contentBox {
+    width: 98%;
+    padding: 8px;
+    outline-width: 5px;
+  }
+
+  .sidebar-toggle {
+    padding: 5px 8px;
+    font-size: 1ch;
+  }
 }
