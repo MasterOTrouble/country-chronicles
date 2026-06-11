@@ -221,7 +221,7 @@ img {
   }
 
   .box2 {
-    width: calc(100% - 250px);
+    width: calc(100% - 225px);
   }
 
   .box3 {
@@ -272,7 +272,7 @@ img {
   }
 
   .box2 {
-    width: calc(100% - 70px);
+    width: calc(100% - 63px);
     font-size: 3%;
   }
 
