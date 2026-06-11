@@ -58,7 +58,7 @@ a:hover {
 }
 
 img {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
   display: block;
 }
@@ -262,6 +262,7 @@ img {
   .box3 {
     width: 98%;
     overflow: hidden;
+    font-size: 2.5ch;
   }
 
   .box3.collapsed {
@@ -270,13 +271,13 @@ img {
 
   .box1 {
     width: calc(100% - 70px);
-    font-size: 1.2ch;
+    font-size: 1.6ch;
   }
 
   .box2 {
     width: calc(100% - 63px);
     top: 15px;
-    height: 60px;
+    height: 50px;
     font-size: 3%;
   }
 
@@ -297,45 +298,3 @@ img {
   }
 }
 
-@media (max-width: 480px) {
-  body {
-    padding-top: 110px;
-  }
-
-  h1 {
-    font-size: 2.5ch;
-    line-height: 0.8ch;
-  }
-
-  h2 {
-    font-size: 2ch;
-    line-height: 1.5ch;
-  }
-
-  p {
-    font-size: 1.3ch;
-    margin: 8px;
-  }
-
-  .box1,
-  .box2 {
-    width: calc(100% - 60px);
-    font-size: 1ch;
-    height:auto;
-  }
-
-  .box3 {
-    width: 98%;
-  }
-
-  .contentBox {
-    width: 98%;
-    padding: 8px;
-    outline-width: 5px;
-  }
-
-  .sidebar-toggle {
-    padding: 5px 8px;
-    font-size: 1ch;
-  }
-}
