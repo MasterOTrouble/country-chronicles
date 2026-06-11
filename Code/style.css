@@ -222,6 +222,8 @@ img {
 
   .box2 {
     width: calc(100% - 225px);
+    top: 20px;
+    height: 70px;
   }
 
   .box3 {
@@ -258,7 +260,7 @@ img {
 
   /* Collapse sidebar on mobile */
   .box3 {
-    width: 70px;
+    width: 98%;
     overflow: hidden;
   }
 
@@ -273,6 +275,8 @@ img {
 
   .box2 {
     width: calc(100% - 63px);
+    top: 15px;
+    height: 60px;
     font-size: 3%;
   }
 
@@ -317,10 +321,11 @@ img {
   .box2 {
     width: calc(100% - 60px);
     font-size: 1ch;
+    height:auto;
   }
 
   .box3 {
-    width: 60px;
+    width: 98%;
   }
 
   .contentBox {
